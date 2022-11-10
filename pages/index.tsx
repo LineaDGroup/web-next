@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                   <p className={`text-2xl`}>En 2008 LineaD Group crea su propio equipo IT para proveer servicios de tecnología a sus clientes, quienes demandaban aplicaciones robustas y reproductores de video para sus necesidades digitales. A lo largo de los últimos 15 años evolucionamos en nuestras soluciones tecnológicas, desarrollando aplicaciones de alto rendimiento para prácticamente cualquier industria. Asesoramos y desarrollamos aplicaciones móviles, ERPs y software a medida con despliegue en la nube para soportar altas demandas. Conozca nuestros casos de éxito.</p>
                 </div>
                 <div className={`flex flex-col basis-full md:basis-1/3 px-0 md:px-8`}>
-                  <Image src={`/images/it-software-development-coding-2.png`} width="940" height="882" />
+                  <Image alt="LineaD Group" src={`/images/it-software-development-coding-2.png`} width="940" height="882" />
                 </div>
               </div>
             </Section>
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
                   <p className={`text-2xl`}>LineaD Group comienza a trabajar en streaming en el año 2006 ofreciendo soluciones a plataformas de contenidos, proveyendo servicios de streaming a demanda y en vivo en eventos de miles de usuarios concurrentes. Pioneers in live broadcasts over the internet, we’ve carried out more than 10,000 hours of live streaming, where we solve everything from the production and generation of content to distribution and playback for thousands of concurrent users. Know our works.</p>
                 </div>
                 <div className={`flex flex-col basis-full md:basis-1/3 px-0 md:px-8`}>
-                  <Image src={`/images/streaming-media-content-1.png`} width="940" height="882" />
+                  <Image alt="LineaD Group" src={`/images/streaming-media-content-1.png`} width="940" height="882" />
                 </div>
               </div>
             </Section>

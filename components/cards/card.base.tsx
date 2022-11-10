@@ -14,7 +14,7 @@ export default function Card({children, config}: any) {
         {/* Image in card */}
         {
             config.type !== 'imageBackground' &&
-            <Image className={`aspect-video`} src={config.image} alt="LineaD Group" width={500} height={500}></Image>
+            <Image alt="LineaD Group" className={`aspect-video`} src={config.image} width={500} height={500}></Image>
         }
         {/* Card content */}
         <div className={`flex-col flex ${config.type === 'imageBackground' && 'h-full'} relative w-full`} style={{justifyContent: config.justify, alignItems: config.align, textAlign: config.textAlign}}>
