@@ -10,8 +10,8 @@
       {
         "source": "**",
         "run": {
-          "serviceId": "biobarica-web-next",
-          "region": "us-central1"
+          "serviceId": "web-next",
+          "region": "southamerica-east1"
         }
       }
     ]

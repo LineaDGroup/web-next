@@ -36,7 +36,7 @@ options:
   substitutionOption: ALLOW_LOOSE
 substitutions:
   _PLATFORM: managed
-  _SERVICE_NAME: biobarica-web-next
+  _SERVICE_NAME: web-next
   _LABELS: gcb-trigger-id=eec212de-cb83-4ea4-b7fd-13e62094de58
   _TRIGGER_ID: eec212de-cb83-4ea4-b7fd-13e62094de58
   _DEPLOY_REGION: us-central1
@@ -44,4 +44,4 @@ substitutions:
 tags:
   - gcp-cloud-build-deploy-cloud-run
   - gcp-cloud-build-deploy-cloud-run-managed
-  - biobarica-web-next
+  - web-next
