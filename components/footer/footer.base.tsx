@@ -8,7 +8,7 @@ export default function Footer({children, config, logo='/images/logo.png'}: {chi
     <div id="contact" className={`${config.fullHeight && 'h-screen'} px-8 bg-cover bg-center relative mx-auto ${config.fullWidth && 'w-full'} ${config.maxWidth || ''} ${config.customClass || ''}`} style={{backgroundImage: config.backgroundImage && `url(${config.backgroundImage})`}}>
         <div className={`flex flex-row flex-wrap`}>
             <div className={`basis-full md:basis-1/3 flex flex-col`}>
-                <Image alt="LineaD Group" src={logo} className="mr-3 h-6 sm:h-9 aspect-[3/1]" width={150} height={51} layout="fixed"/>
+            <div><div className={`h-8 sm:h-12 relative aspect-[3/1]`}> <Image alt="LineaD Group" src={logo} className="mr-3" fill={true}/></div></div>
                 <p><b>Email</b></p>
                 <p>info@lineadgroup.com</p>
             </div>

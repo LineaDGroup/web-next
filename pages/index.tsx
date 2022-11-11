@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import ClientsCarousel from '../components/carousel/clients'
 import Footer from '../components/footer/footer.base'
 import Hero from '../components/hero/hero.base'
@@ -8,6 +10,7 @@ import Layout from '../components/layout'
 import Section from '../components/section/section.base'
 
 const Home: NextPage = () => {
+  const router = useRouter();
   return (
     <>
     <Head>
@@ -20,13 +23,13 @@ const Home: NextPage = () => {
                 <p className={`text-base md:text-3xl text-center md:text-right`}>¿Buscas</p>
                 <h1 className={`text-4xl lg:text-6xl xl:text-8xl  uppercase font-bold md:leading-tight text-center md:text-right`}>Tecnologia</h1>
                 <h1 className={`text-4xl lg:text-6xl xl:text-8xl uppercase font-bold md:leading-tight text-teal-300 text-center md:text-right`}>_Desarrollo</h1>
-                <div className={`w-12 md:w-16 mx-auto md:mx-0 self-end w-16 h-16`}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.21 69.21"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle fill="none" strokeWidth="2" stroke="#fff" strokeMiterlimit="10" cx="34.6" cy="34.6" r="33.6"/><path fill="none" strokeWidth="2" stroke="#fff" strokeMiterlimit="10" d="M38.08 46.67 26.16 34.76l11.92-11.91"/></g></g></svg></div>
+                <Link className={`mt-8`} href={`${router.locale}/development`}><div className={`w-12 md:w-16 mx-auto md:mx-0 self-end w-16 h-16`}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.21 69.21"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle fill="none" strokeWidth="2" stroke="#fff" strokeMiterlimit="10" cx="34.6" cy="34.6" r="33.6"/><path fill="none" strokeWidth="2" stroke="#fff" strokeMiterlimit="10" d="M38.08 46.67 26.16 34.76l11.92-11.91"/></g></g></svg></div></Link>
             </div>
             <div className={`flex basis-full md:basis-1/2 flex-col justify-center items-center md:items-start px-4 md:px-8`}>
                 <p className={`text-base md:text-3xl text-center md:text-left`}>¿Buscas</p>
-                <h1 className={`text-4xl lg:text-6xl xl:text-8xl uppercase font-bold md:leading-tight text-center md:text-left`}>Tecnologia</h1>
-                <h1 className={`text-4xl lg:text-6xl xl:text-8xl uppercase font-bold md:leading-tight text-primary text-center md:text-left`}>_Desarrollo</h1>
-                <div className={`w-12 md:w-16 mx-auto md:mx-0 self-start w-16 h-16`}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.21 69.21"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle fill="none" strokeWidth="2" stroke="#fff" strokeMiterlimit="10" cx="34.6" cy="34.6" r="33.6"/><path fill="none" strokeWidth="2" stroke="#fff" strokeMiterlimit="10" d="m31.13 46.67 11.92-11.91-11.92-11.91"/></g></g></svg></div>
+                <h1 className={`text-4xl lg:text-6xl xl:text-8xl uppercase font-bold md:leading-tight text-center md:text-left`}>Streaming</h1>
+                <h1 className={`text-4xl lg:text-6xl xl:text-8xl uppercase font-bold md:leading-tight text-primary text-center md:text-left`}>_Media</h1>
+                <Link className={`mt-8`} href={`${router.locale}/streaming`}><div className={`w-12 md:w-16 mx-auto md:mx-0 self-start w-16 h-16`}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.21 69.21"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle fill="none" strokeWidth="2" stroke="#fff" strokeMiterlimit="10" cx="34.6" cy="34.6" r="33.6"/><path fill="none" strokeWidth="2" stroke="#fff" strokeMiterlimit="10" d="m31.13 46.67 11.92-11.91-11.92-11.91"/></g></g></svg></div></Link>
             </div>
               </Hero>
             <div className='flex justify-center bg-white'>

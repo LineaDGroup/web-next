@@ -37,7 +37,7 @@ export default function Navbar({logo='/images/logo.png'}: {logo?:string}) {
 <nav className="bg-black px-2 sm:px-4 py-2.5 fixed w-full z-50 top-0 left-0">
   <div className="container flex flex-wrap justify-between items-center mx-auto">
   <a href="/" className="flex items-center">
-      <Image alt="LineaD Group" src={logo} className="mr-3 h-6 sm:h-9" width={150} height={51}/>
+      <div className={`h-8 sm:h-12 relative aspect-[3/1]`}> <Image alt="LineaD Group" src={logo} className="mr-3" fill={true}/></div>
   </a>
   <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
     <ul className="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
