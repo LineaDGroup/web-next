@@ -1,9 +1,12 @@
 import Image from "next/image";
-import { ReactNode } from "react";
+import { ReactNode, useCallback, useEffect } from "react";
 import SectionConfig from "../../interfaces/section";
+import { ReCaptchaProvider, useReCaptcha, useReCaptchaContext } from "next-recaptcha-v3";
+import Form from "../shared/form";
 
 export default function Footer({children, config, logo='/images/logo.png'}: {children?: ReactNode, config: SectionConfig,logo?:string}) {
   const inputSharedClass = 'bg-white h-14 max-w-xs my-2 p-2';
+
     return (
     <div id="contact" className={`${config.fullHeight && 'h-screen'} px-8 bg-cover bg-center relative mx-auto ${config.fullWidth && 'w-full'} ${config.maxWidth || ''} ${config.customClass || ''}`} style={{backgroundImage: config.backgroundImage && `url(${config.backgroundImage})`}}>
         <div className={`flex flex-row flex-wrap`}>
@@ -13,13 +16,15 @@ export default function Footer({children, config, logo='/images/logo.png'}: {chi
                 <p>info@lineadgroup.com</p>
             </div>
             <div className={`basis-full md:basis-1/3 flex flex-col`}>
-                <form className={`flex flex-col`}>
-                    <input className={inputSharedClass} type="text" name="name" placeholder="Nombre" role="first_name"/>
-                    <input className={inputSharedClass} type="email" name="email" placeholder="Mail" role="email"/>
-                    <input className={inputSharedClass} type="tel" name="tel" placeholder="Telefono" role="phone"/>
-                    <textarea className={`${inputSharedClass} h-48`} name="message" placeholder="Mensaje"/>
-                    <button type="submit" className={`border-2 border-white max-w-xs`}>Enviar</button>
-                </form>
+                <ReCaptchaProvider reCaptchaKey="6LdDjgcjAAAAALQt1w8tpgEyKabYfhoeAhArCupr" async={true}>
+                    <Form>
+                        <input required className={inputSharedClass} type="text" name="name" placeholder="Nombre" role="first_name"/>
+                        <input required className={inputSharedClass} type="email" name="email" placeholder="Mail" role="email"/>
+                        <input className={inputSharedClass} type="tel" name="phone" placeholder="Telefono" role="phone"/>
+                        <textarea className={`${inputSharedClass} h-48`} name="message" placeholder="Mensaje"/>
+                        <button type="submit" className={`border-2 border-white max-w-xs`}>Enviar</button>
+                    </Form>
+                </ReCaptchaProvider>
             </div>
             <div className={`basis-full md:basis-1/3 flex flex-col`}>
                 <h5 className={`text-2xl`}>Conecta</h5>

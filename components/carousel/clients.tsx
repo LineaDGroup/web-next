@@ -33,7 +33,6 @@ export default function ClientsCarousel({inverted} : any) {
     const [render,setRender] = useState(false);
 
     useEffect(()=> setRender(true),[])
-    console.log(typeof window);
     return (
       <div>
         {render && <Swiper
@@ -58,8 +57,6 @@ export default function ClientsCarousel({inverted} : any) {
           }}
           navigation={true}
           loop={true}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           {slides.map((slide,index) => 
           
