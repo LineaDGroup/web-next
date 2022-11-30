@@ -13,8 +13,8 @@ import { useEffect, useState } from 'react';
 export default function ClientsCarousel({inverted} : any) {
     const slides = [
       '/images/clients/history.png',
-      '/images/clients/AE_Networks_2017-2.png',
-      '/images/clients/viacom-1.png',
+      '/images/clients/A+E.png',
+      '/images/clients/viacom.png',
       '/images/clients/boca.png',
       '/images/clients/teatrix.png',
       '/images/clients/biobarica.png',
