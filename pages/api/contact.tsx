@@ -3,7 +3,7 @@ import axios from 'axios';
 import type { NextApiRequest, NextApiResponse } from 'next'
 import sgMail from '@sendgrid/mail';
 
-sgMail.setApiKey('***REMOVED***')
+sgMail.setApiKey(process.env.SG_KEY || 'SG.undefined')
 
 type Response = {
   success: boolean;
