@@ -72,9 +72,3 @@ node_modules/
 
 #macOS DS_Store
 .DS_Store
-
-src/history
-
-www
-
-stage

@@ -31,7 +31,7 @@ export default function Form({children}: {children?: ReactNode}) {
         const formData = new FormData(form);
         const data = Object.fromEntries(formData);
         data.token = token;
-        dialogRef.current && dialogRef.current.openDialog();
+        dialogRef.current && (dialogRef.current as any).openDialog();
         try {
             const response = await fetch('/api/contact',
             {
@@ -49,7 +49,7 @@ export default function Form({children}: {children?: ReactNode}) {
         } catch (error) {
             console.log(error);
         } finally {
-            dialogRef.current && dialogRef.current.closeDialog();
+            dialogRef.current && (dialogRef.current as any).closeDialog();
         }
   }, [executeRecaptcha]);
 

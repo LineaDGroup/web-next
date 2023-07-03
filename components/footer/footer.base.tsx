@@ -5,7 +5,7 @@ import { ReCaptchaProvider, useReCaptcha, useReCaptchaContext } from "next-recap
 import Form from "../shared/form";
 
 export default function Footer({children, config, logo='/images/logo.png'}: {children?: ReactNode, config: SectionConfig,logo?:string}) {
-  const inputSharedClass = 'bg-white h-14 max-w-xs my-2 p-2';
+  const inputSharedClass = 'bg-white h-14 max-w-xs my-2 p-2 text-black';
 
     return (
     <div id="contact" className={`${config.fullHeight && 'h-screen'} px-8 bg-cover bg-center relative mx-auto ${config.fullWidth && 'w-full'} ${config.maxWidth || ''} ${config.customClass || ''}`} style={{backgroundImage: config.backgroundImage && `url(${config.backgroundImage})`}}>
