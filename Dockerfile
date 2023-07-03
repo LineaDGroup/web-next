@@ -50,6 +50,8 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 ARG SG_KEY
 ENV SG_KEY=$SG_KEY
+ARG RECAPTCHA_SECRET
+ENV RECAPTCHA_SECRET=$RECAPTCHA_SECRET
 
 USER nextjs
 

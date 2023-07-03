@@ -5,6 +5,8 @@ steps:
       - '--no-cache'
       - '--build-arg'
       - 'SG_KEY=$_SG_KEY'
+      - '--build-arg'
+      - 'RECAPTCHA_SECRET=$_RECAPTCHA_SECRET'
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA'
       - .

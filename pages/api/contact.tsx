@@ -24,7 +24,7 @@ export default async function handler(
       return res.status(403).json({success: false,code : 1,message : "No token provided"});
     }
     // Put your secret key here.
-    var secretKey = "***REMOVED***";
+    var secretKey = process.env.RECAPTCHA_SECRET;
     // req.connection.remoteAddress will provide IP address of connected user.
     var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + body['token'] + "&remoteip=" + req.connection.remoteAddress;
     // Hitting GET request to the URL, Google will respond with success or error scenario.
