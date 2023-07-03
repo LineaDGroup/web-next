@@ -35,7 +35,7 @@ export default function Navbar({logo='/images/logo.png'}: {logo?:string}) {
   return (
 
 <nav className="bg-black px-2 sm:px-4 py-2.5 fixed w-full z-50 top-0 left-0">
-  <div className="container flex flex-wrap justify-between items-center mx-auto">
+  <div className="container flex flex-wrap justify-between items-center mx-auto px-8">
   <a href="/" className="flex items-center">
       <div className={`h-8 sm:h-12 relative aspect-[3/1]`}> <Image alt="LineaD Group" src={logo} className="mr-3" fill={true}/></div>
   </a>

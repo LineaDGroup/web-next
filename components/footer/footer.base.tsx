@@ -3,6 +3,7 @@ import { ReactNode, useCallback, useEffect } from "react";
 import SectionConfig from "../../interfaces/section";
 import { ReCaptchaProvider, useReCaptcha, useReCaptchaContext } from "next-recaptcha-v3";
 import Form from "../shared/form";
+import Link from "next/link";
 
 export default function Footer({children, config, logo='/images/logo.png'}: {children?: ReactNode, config: SectionConfig,logo?:string}) {
   const inputSharedClass = 'bg-white h-14 max-w-xs my-2 p-2 text-black';
@@ -11,9 +12,14 @@ export default function Footer({children, config, logo='/images/logo.png'}: {chi
     <div id="contact" className={`${config.fullHeight && 'h-screen'} px-8 bg-cover bg-center relative mx-auto ${config.fullWidth && 'w-full'} ${config.maxWidth || ''} ${config.customClass || ''}`} style={{backgroundImage: config.backgroundImage && `url(${config.backgroundImage})`}}>
         <div className={`flex flex-row flex-wrap`}>
             <div className={`basis-full md:basis-1/3 flex flex-col`}>
-            <div><div className={`h-8 sm:h-12 relative aspect-[3/1]`}> <Image alt="LineaD Group" src={logo} className="mr-3" fill={true}/></div></div>
+                <div>
+                    <div className={`h-8 sm:h-12 relative aspect-[3/1]`}> <Image alt="LineaD Group" src={logo} className="mr-3" fill={true}/></div>
+                </div>
+                <div className="mt-4">
+
                 <p><b>Email</b></p>
-                <p>info@lineadgroup.com</p>
+                <Link href="mailto:info@lineadgroup.com">info@lineadgroup.com</Link>
+                </div>
             </div>
             <div className={`basis-full md:basis-1/3 flex flex-col`}>
                 <ReCaptchaProvider reCaptchaKey="6LdDjgcjAAAAALQt1w8tpgEyKabYfhoeAhArCupr" async={true}>

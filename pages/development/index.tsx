@@ -31,7 +31,7 @@ const DevelopmentPage: NextPage = () => {
                 <div className={`flex w-full gap-[var(--gap)] flex-wrap`}>
                 <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
                     <Card config={{border: '#77ffff',type:'imageBackground', image:'/images/bg-dev.jpg', align:'left', textAlign:'left', justify:'end'}}>
-                      <div className={`max-w-[70%]`}>
+                      <div className={`max-w-[70%] leading-tight`}>
                         <h2 className={`text-[#77ffff] text-3xl font-bold uppercase mb-4`}>Desarrollo<br></br>(Web, Mobile, Software)</h2>
                         Trabajamos con las tecnologías más modernas en desarrollo de software para productos digitales de la más alta calidad y performance. Desarrollamos productos como:
                         <br></br>E-commerce
@@ -43,7 +43,7 @@ const DevelopmentPage: NextPage = () => {
                   </div>
                   <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
                     <Card config={{border: '#77ffff',type:'imageBackground', image:'/images/bg-dev-2.jpg', align:'left', textAlign:'left', justify:'end'}}>
-                      <div className={`max-w-[70%]`}>
+                      <div className={`max-w-[70%] leading-tight`}>
                         <h2 className={`text-[#77ffff] text-3xl font-bold uppercase mb-4`}>UI/UX <br></br>(Web y Mobile)</h2>
                         Diseño de interfáz y experiencia de usuario adaptable a todas las pantallas.
 Diseñamos productos basados en la premisa “Mobile First” para lograr un diseño atractivo y moderno con una experiencia de usuario óptima en cualquier dispositivo.
@@ -52,7 +52,7 @@ Diseñamos productos basados en la premisa “Mobile First” para lograr un dis
                   </div>
                   <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
                     <Card config={{border: '#77ffff',type:'imageBackground', image:'/images/bg-dev-3.jpg', align:'left', textAlign:'left', justify:'end'}}>
-                      <div className={`max-w-[70%]`}>
+                      <div className={`max-w-[70%] leading-tight`}>
                         <h2 className={`text-[#77ffff] text-3xl font-bold uppercase mb-4`}>DevOps / IT</h2>
                         Proveemos consultoría y soporte en el desarrollo y mantenimiento de la infraestructura para que su producto cuente con un entorno de producción confiable, escalable y resiliente.
                       </div>
@@ -60,7 +60,7 @@ Diseñamos productos basados en la premisa “Mobile First” para lograr un dis
                   </div>
                   <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
                     <Card config={{border: '#77ffff',type:'imageBackground', image:'/images/bg-dev-4.jpg', align:'left', textAlign:'left', justify:'end'}}>
-                      <div className={`max-w-[70%]`}>
+                      <div className={`max-w-[70%] leading-tight`}>
                         <h2 className={`text-[#77ffff] text-3xl font-bold uppercase mb-4`}>Estrategia Digital</h2>
                         Lo apoyamos y acompañamos para llevar su proyecto a la realidad abarcando todas las áreas requeridas para una presencia digital de la más alta calidad.
                       </div>
@@ -72,12 +72,12 @@ Diseñamos productos basados en la premisa “Mobile First” para lograr un dis
             <div className='flex justify-center bg-zinc-100'>
               
               <Section config={{maxWidth:'max-w-screen-lg', customClass:'py-48'}}>
-                <h2 className={`self-start text-black uppercase text-2xl font-bold mb-8`}>Proyectos Recientes</h2>
-                <div className={`flex w-full gap-[var(--gap)]`}>
+                <h2 className={`self-start text-black uppercase text-4xl font-bold mb-8`}>Proyectos Recientes</h2>
+                <div className={`flex w-full gap-[var(--gap)] flex-wrap`}>
                   <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
-                    <Card config={{type:'imageTop', image:'/images/development/paramount-live-events.jpg', align:'center', textAlign:'center', justify:'start'}} image="/images/main-development.jpg" type="imageBackground">
-                      <h2 className={`text-black text-3xl h-18 overflow-hidden font-bold uppercase mb-4`}>Paramount Live Events</h2>
-                      <p className={`text-black text-sm h-20 overflow-hidden mb-4`}>Desarrollamos un portal de eventos en vivo para un micrositio especial de Paramount.
+                    <Card config={{type:'imageTop', image:'/images/development/paramount-live-events.jpg', align:'start', textAlign:'left', justify:'start'}} image="/images/main-development.jpg" type="imageBackground">
+                      <h2 className={`text-black text-3xl h-18 overflow-hidden font-bold uppercase my-4`}>Paramount Live Events</h2>
+                      <p className={`text-black text-justify text-md h-24 overflow-hidden mb-4`}>Desarrollamos un portal de eventos en vivo para un micrositio especial de Paramount.
                       <br></br>
                       <b>Tecnologías:</b> React, Node, Firebase<br></br>
                       <b>Servicios:</b> Desarollo Front, Desarrollo Back y DevOps
@@ -86,9 +86,9 @@ Diseñamos productos basados en la premisa “Mobile First” para lograr un dis
                     </Card>
                   </div>
                   <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
-                    <Card config={{type:'imageTop', image:'/images/development/famihood.jpg', align:'center', textAlign:'center', justify:'start'}} image="/images/main-development.jpg" type="imageBackground">
-                      <h2 className={`text-black text-3xl h-18 overflow-hidden font-bold uppercase mb-4`}>Famihood</h2>
-                      <p className={`text-black text-sm h-20 overflow-hidden mb-4`}>Desarrollamos una plataforma OTT específicamente pensada para padres con niños pequeños o nuevos integrantes de la familia.
+                    <Card config={{type:'imageTop', image:'/images/development/famihood.jpg', align:'start', textAlign:'left', justify:'start'}} image="/images/main-development.jpg" type="imageBackground">
+                      <h2 className={`text-black text-3xl h-18 overflow-hidden font-bold uppercase my-4 text-left`}>Famihood</h2>
+                      <p className={`text-black text-justify text-md h-24 overflow-hidden mb-4`}>Desarrollamos una plataforma OTT específicamente pensada para padres con niños pequeños o nuevos integrantes de la familia.
                       <br></br>
                       <b>Tecnologías:</b> Ionic + Angular, Node, Firebase<br></br>
                       <b>Servicios:</b> Aplicaciones Nativas, Desarollo Front, Desarrollo Back y DevOps
