@@ -76,7 +76,7 @@ Diseñamos productos basados en la premisa “Mobile First” para lograr un dis
                 <div className={`flex w-full gap-[var(--gap)] flex-wrap`}>
                   <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
                     <Card config={{type:'imageTop', image:'/images/development/paramount-live-events.jpg', align:'start', textAlign:'left', justify:'start'}} image="/images/main-development.jpg" type="imageBackground">
-                      <h2 className={`text-black text-3xl h-18 overflow-hidden font-bold uppercase my-4`}>Paramount Live Events</h2>
+                      <h2 className={`text-black text-2xl h-18 overflow-hidden font-bold uppercase my-4`}>Paramount Live Events</h2>
                       <p className={`text-black text-justify text-md h-24 overflow-hidden mb-4`}>Desarrollamos un portal de eventos en vivo para un micrositio especial de Paramount.
                       <br></br>
                       <b>Tecnologías:</b> React, Node, Firebase<br></br>
@@ -87,7 +87,7 @@ Diseñamos productos basados en la premisa “Mobile First” para lograr un dis
                   </div>
                   <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
                     <Card config={{type:'imageTop', image:'/images/development/famihood.jpg', align:'start', textAlign:'left', justify:'start'}} image="/images/main-development.jpg" type="imageBackground">
-                      <h2 className={`text-black text-3xl h-18 overflow-hidden font-bold uppercase my-4 text-left`}>Famihood</h2>
+                      <h2 className={`text-black text-2xl h-18 overflow-hidden font-bold uppercase my-4 text-left`}>Famihood</h2>
                       <p className={`text-black text-justify text-md h-24 overflow-hidden mb-4`}>Desarrollamos una plataforma OTT específicamente pensada para padres con niños pequeños o nuevos integrantes de la familia.
                       <br></br>
                       <b>Tecnologías:</b> Ionic + Angular, Node, Firebase<br></br>

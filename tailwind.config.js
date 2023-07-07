@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Barlow Condensed'],
+        'sans': ['Jost'],
       },
       colors: {
         primary: '#ff002f',
