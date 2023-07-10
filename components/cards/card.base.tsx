@@ -9,7 +9,7 @@ export default function Card({children, config}: any) {
         {/* Image as background */}
         {
             config.type === 'imageBackground' &&
-            <div className={`bg-cover bg-center absolute w-full h-full top-0 left-0 ${config.border && 'border-l-8'}`} style={{backgroundImage: `url(${config.image})`, borderColor: config.border}}></div>
+            <div className={`bg-cover bg-center absolute w-full h-full top-0 left-0 ${config.border && 'border-l-8'}`} style={{backgroundImage: `url(${config.image})`, borderColor: config.color}}></div>
         }
         {/* Image in card */}
         {
