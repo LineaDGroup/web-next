@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               <p className={`text-xl py-4 text-center`}>LineaD comienza como una compañía de producción de contenido en 2006.</p>
               <p className={`text-xl py-4 text-center`}>Creamos contenido e implementamos una solución de generación de contenido y tecnológica para JumpTV para la reproducción de video en una de las primeras plataformas OTT a nivel mundial. Trabajamos en la producción y postproducción de contenido. En 2008 creamos nuestro propio equipo de TI para formar LineaD Group , una compañía dedicada a proporcionar soluciones tecnológicas a sus clientes, tanto servicios de medios como desarrollo de software para soluciones móviles y web. Comenzamos proveyendo soluciones tecnológicas en el ámbito del contenido multimedia por internet y rápidamente ampliamos nuestros servicios para proveer desarrollos a medida, desde plataformas OTT hasta desarrollos para la industria médica, tanto para entornos cerrados como para consumo masivo.</p>
             </Section>
-            <Section config={{maxWidth:'max-w-screen-2xl', customClass:'py-12'}}>
+            <Section wrapperClassName="bg-[#251354]" config={{maxWidth:'max-w-screen-2xl', customClass:'py-24'}}>
               {/*This should become a columns component*/}
               <div className={`flex flex-wrap-reverse md:flex-row`}>
                 {/*This should become a column component*/}
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </Section>
-            <Section config={{maxWidth:'max-w-screen-2xl', customClass:'py-12'}}>
+            <Section wrapperClassName="bg-[#452286]" config={{maxWidth:'max-w-screen-2xl', customClass:'py-24'}}>
               {/*This should become a columns component*/}
               <div className={`flex flex-wrap-reverse flex-row-reverse`}>
                 {/*This should become a column component*/}

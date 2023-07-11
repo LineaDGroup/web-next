@@ -6,7 +6,7 @@ import Card from "./card.base";
 export default function CardProjects({ children, config }: any) {
   return (
     <Card config={{...config, type:'imageTop', align:'start', textAlign:'left', justify:'start'}} image="/images/main-development.jpg" type="imageBackground">
-                      <h2 className={`text-black text-2xl h-18 overflow-hidden font-bold uppercase my-4`}>{config.title}</h2>
+                      <h2 className={`text-black text-2xl h-18 overflow-hidden font-bold uppercase my-4 text-center w-full`}>{config.title}</h2>
                       <p className={`text-black text-justify text-md h-24 overflow-hidden mb-4`}>
                         {config.content}
                       </p>
