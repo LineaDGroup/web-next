@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply font-bold uppercase mb-4;
+    &.primary {
+      @apply text-3xl md:text-4xl;
+    }
+    &.secondary {
+      @apply text-2xl md:text-3xl;
+    }
+    &.tertiary {
+      @apply text-xl md:text-2xl;
+    }
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background: black;
+  }
+// }
+body {
+  color: white;
+}
+:root {
+  --gap: 40px;
+  scroll-behavior: smooth;
+}
