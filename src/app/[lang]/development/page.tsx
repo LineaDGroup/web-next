@@ -7,8 +7,7 @@ import Section from '@/components/section/section.base'
 import CardServices from "@/components/cards/card.services"
 import CardProjects from "@/components/cards/card.projects"
 
-const DevelopmentPage: NextPage = ({params}) => {
-  console.log(params);
+const DevelopmentPage = ({params}: any) => {
   return (
     <>
     <div>
