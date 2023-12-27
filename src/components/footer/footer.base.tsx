@@ -1,10 +1,10 @@
 "use client"
 import Image from "next/image";
 import { ReactNode } from "react";
-import SectionConfig from "../../../interfaces/section";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
 import Form from "../shared/form";
 import Link from "next/link";
+import SectionConfig from "../../../interfaces/section";
 
 export default function Footer({children, config, logo='/images/logo.png'}: {children?: ReactNode, config: SectionConfig,logo?:string}) {
   const inputSharedClass = 'bg-white h-14 max-w-xs my-2 p-2 text-black';

@@ -15,14 +15,12 @@ const jost = Jost({
 });
 
 export async function generateMetadata(
-  { params }: any,
-  parent?: ResolvingMetadata
+  { params }: any
 ): Promise<Metadata> {
  
   const title = 'LineaD Group';
   const description = params.lang === 'es'?'Desarrollo de software, Streaming, contenido':'Software development, streaming, content';
   // optionally access and extend (rather than replace) parent metadata
-  const previousImages = (await parent)?.openGraph?.images || []
  
   return {
     title: title,

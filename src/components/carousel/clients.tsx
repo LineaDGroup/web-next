@@ -1,7 +1,6 @@
 "use client"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -9,6 +8,7 @@ import 'swiper/css/autoplay';
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 
 export default function ClientsCarousel({inverted} : any) {

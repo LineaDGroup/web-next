@@ -2,7 +2,7 @@ import Image from "next/image";
 import { forwardRef, ReactNode, useCallback, useEffect, useImperativeHandle, useState } from "react";
 import { useReCaptcha } from "next-recaptcha-v3";
 
-export default forwardRef(({children,open}:any,ref) =>{
+const Dialog =  forwardRef(({children,open}:any,ref) =>{
     const [isOpen,setIsOpen] = useState(false);
 
   useImperativeHandle(ref, () => ({
@@ -24,4 +24,8 @@ export default forwardRef(({children,open}:any,ref) =>{
             {children}
         </dialog>
   );
-})
+});
+
+Dialog.displayName = "Dialog";
+
+export default Dialog;
