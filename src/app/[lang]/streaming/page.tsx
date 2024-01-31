@@ -32,19 +32,19 @@ const StreamingPage: NextPage = ({lang}: any) => {
                 </video>
               </div>
               <Section config={{maxWidth:'max-w-screen-lg', customClass:'py-48'}}>
-                <div className={`flex w-full gap-[var(--gap)] flex-wrap`}>
-                <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
+                <div className={`grid grid-cols-12 gap-4`}>
+                <div className={`col-span-12 md:col-span-6`}>
                     <CardServices config={{title:`Streaming`,content:`Hacemos transmisiones de de todo tipo de eventos en modalidad 100% online, mixtos o presenciales con equipos de última tecnología. Brindamos servicio para todas las etapas de una transmisión de calidad broadcasting: Producción, dirección y operación técnica.`,border: true, color: '#FF002F',type:'imageBackground', image:'/images/streaming/live-streaming.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
                   </div>
-                  <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
+                  <div className={`col-span-12 md:col-span-6`}>
                     <CardServices config={{title:`Producción`,content:`Tenemos una vasta experiencia en producción audiovisual, realizamos piezas en todo tipo de formatos y para las diferentes necesidades, sean institucionales, publicitarias, documentales, de entretenimiento o divulgación científica incluyendo creatividad, guión, filmación y postproducción.
                       `,border: true, color: '#FF002F',type:'imageBackground', image:'/images/streaming/camera-events.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
                   </div>
-                  <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
+                  <div className={`col-span-12 md:col-span-6`}>
                     <CardServices config={{title:<span>Animación<br></br>2D y 3D</span>,content:`Producimos piezas de animación 2d y 3d de manera integral - guión, gráfica y edición - adaptándonos a todo tipo de requerimientos.
                       `,border: true, color: '#FF002F',type:'imageBackground', image:'/images/streaming/animacion-edicion.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
                   </div>
-                  <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
+                  <div className={`col-span-12 md:col-span-6`}>
                     <CardServices config={{title:`Contenidos para RRSS`,content:`Realizamos creatividad y contenidos para campañas de marketing digital.
                         También diseñamos y pautamos las campañas para el mejor resultado en las diferentes redes sociales.
                       `,border: true, color: '#FF002F',type:'imageBackground', image:'/images/streaming/redes-sociales.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
@@ -56,22 +56,22 @@ const StreamingPage: NextPage = ({lang}: any) => {
               
               <Section config={{maxWidth:'max-w-screen-lg', customClass:'py-48'}}>
               <h2 className={`self-center text-black uppercase text-4xl font-bold mb-8`}>Proyectos Recientes</h2>
-                <div className={`flex w-full gap-[var(--gap)] flex-wrap`}>
-                  <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
+                <div className={`grid grid-cols-12 gap-4`}>
+                  <div className={`col-span-12 md:col-span-6`}>
                     <CardProjects config={{title:`History channel`,content:<span>
                         Realizamos más de 50 eventos de prensa virtuales para esta señal líder en Latinoamérica y EEUU, aportando desde el soporte tecnológico hasta la producción y postproduccón.
                       </span>,type:'imageTop', image:'/images/streaming/history-channel-desafio-sobre-fuego.jpg', align:'center', textAlign:'center', justify:'start'}} image="/images/main-development.jpg" type="imageBackground"></CardProjects>
                   </div>
-                  <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
+                  <div className={`col-span-12 md:col-span-6`}>
                     <CardProjects config={{title:`Teatrix`,content:<span>Creación de contenido, creatividad e ideas para las redes sociales de TEATRIX. Producción de video y efectos visuales para esta plataforma de teatro OTT (Over The Top). También desarrollamos la primera versión de la plataforma TEATRIX en 2015
                       </span>,type:'imageTop', image:'/images/streaming/teatrix-teatro-online.jpg', align:'center', textAlign:'center', justify:'start'}} image="/images/main-development.jpg" type="imageBackground"></CardProjects>
                   </div>
-                  <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
+                  <div className={`col-span-12 md:col-span-6`}>
                     <CardProjects config={{title:`A&E`,content:<span>
                         Reencuentro virtual con los protagonistas de las series más destacadas para la prensa de Latinoamérica
                       </span>,type:'imageTop', image:'/images/streaming/a-and-e.jpg', align:'center', textAlign:'center', justify:'start'}} image="/images/main-development.jpg" type="imageBackground"></CardProjects>
                   </div>
-                  <div className={`basis-full max-w-full md:basis-1/2 md:max-w-[calc(50%-var(--gap)/2)]`}>
+                  <div className={`col-span-12 md:col-span-6`}>
                     <CardProjects config={{title:`Lifetime`,content:<span>
                         #resístetesipuedes es una campaña multimedia protagonizada por talentosas mujeres para impulsar en América Latina a la franquicia líder e irresistible de LIFETIME MOVIES integrada por películas que contienen romance, drama, comedia, intriga y acción.
 

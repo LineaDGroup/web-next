@@ -1,11 +1,16 @@
+"use client"
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 
 export default function Navbar({logo='/images/logo.png', locale}: {logo?:string, locale: string}) {
 
+    const path = usePathname();
+
     const pages = [
         {
-            link: `/${locale}/`,
+            link: `/${locale}`,
             name: 'Home'
         },
         {
@@ -40,7 +45,7 @@ export default function Navbar({logo='/images/logo.png', locale}: {logo?:string,
     <ul className="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
         {pages.map((page, index) => 
             <li key={index}>
-                <a href={page.link} className={`block py-2 pr-4 pl-3 text-white md:p-0 dark:text-white text-lg md:hover:border-b-2 border-primary ${page.link === '/'+locale && 'md:border-b-2'}`} aria-current="page">{page.name}</a>
+                <a href={page.link} className={`block py-2 pr-4 pl-3 text-white md:p-0 dark:text-white text-lg md:hover:border-b-2 border-red-600 ${page.link === path && 'md:border-b-2'}`} aria-current="page">{page.name}</a>
             </li>
         )}
       

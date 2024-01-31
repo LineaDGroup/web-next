@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Card({children, config}: any) {
   return (
     // Main container
-    <div className={`relative p-4 ${config.type === 'imageBackground' && 'aspect-square pl-8'} bg-white w-full`}>
+    <div className={`relative p-4 ${config.type === 'imageBackground' && 'pt-20 md:pt-40 pl-8'} bg-white w-full`}>
         {/* Image as background */}
         {
             config.type === 'imageBackground' &&

@@ -1,9 +1,9 @@
 import { url } from "inspector";
 
 
-export default function Hero({children, fullHeight, backgroundImage}: any) {
+export default function Hero({children, fullHeight, backgroundImage, className}: any) {
   return (
-    <div className={`${fullHeight && 'h-screen'} bg-cover bg-center relative`} style={{backgroundImage: `url(${backgroundImage})`}}>
+    <div className={`${className || ''} ${fullHeight && 'h-screen'} bg-cover bg-center relative`} style={{backgroundImage: `url(${backgroundImage})`}}>
         <div className={`relative flex w-full h-full container mx-auto items-center flex-wrap z-10`}>
             {children}
         </div>
