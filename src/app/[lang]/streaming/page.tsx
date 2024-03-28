@@ -10,7 +10,7 @@ import Section from '@/components/section/section.base'
 import CardServices from "@/components/cards/card.services"
 import CardProjects from "@/components/cards/card.projects"
 
-const StreamingPage: NextPage = ({lang}: any) => {
+const StreamingPage: NextPage = ({params}: any) => {
 
   return (
     <>
@@ -34,14 +34,14 @@ const StreamingPage: NextPage = ({lang}: any) => {
               <Section config={{maxWidth:'max-w-screen-lg', customClass:'py-48'}}>
                 <div className={`grid grid-cols-12 gap-4`}>
                 <div className={`col-span-12 md:col-span-6`}>
-                    <CardServices config={{title:`Streaming`,content:`Hacemos transmisiones de de todo tipo de eventos en modalidad 100% online, mixtos o presenciales con equipos de última tecnología. Brindamos servicio para todas las etapas de una transmisión de calidad broadcasting: Producción, dirección y operación técnica.`,border: true, color: '#FF002F',type:'imageBackground', image:'/images/streaming/live-streaming.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
+                    <CardServices config={{title:`Streaming`,content:`Hacemos transmisiones de todo tipo de eventos en modalidad 100% online, mixtos o presenciales con equipos de última tecnología. Brindamos servicio para todas las etapas de una transmisión de calidad broadcasting: Producción, dirección y operación técnica.`,border: true, color: '#FF002F',type:'imageBackground', image:'/images/streaming/live-streaming.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
                   </div>
                   <div className={`col-span-12 md:col-span-6`}>
-                    <CardServices config={{title:`Producción`,content:`Tenemos una vasta experiencia en producción audiovisual, realizamos piezas en todo tipo de formatos y para las diferentes necesidades, sean institucionales, publicitarias, documentales, de entretenimiento o divulgación científica incluyendo creatividad, guión, filmación y postproducción.
+                    <CardServices config={{title:`Producción`,content:`Tenemos una vasta experiencia en producción audiovisual, realizamos piezas en diversos formatos y para las diferentes necesidades, institucionales, publicitarias, documentales, de entretenimiento o divulgación científica incluyendo creatividad, guión, filmación y postproducción.
                       `,border: true, color: '#FF002F',type:'imageBackground', image:'/images/streaming/camera-events.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
                   </div>
                   <div className={`col-span-12 md:col-span-6`}>
-                    <CardServices config={{title:<span>Animación<br></br>2D y 3D</span>,content:`Producimos piezas de animación 2d y 3d de manera integral - guión, gráfica y edición - adaptándonos a todo tipo de requerimientos.
+                    <CardServices config={{title:<span>Animación<br></br>2D y 3D</span>,content:`Producimos piezas de animación 2d y 3d de manera integral - guión, gráfica y edición - adaptándonos a cada requerimiento.
                       `,border: true, color: '#FF002F',type:'imageBackground', image:'/images/streaming/animacion-edicion.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
                   </div>
                   <div className={`col-span-12 md:col-span-6`}>
@@ -63,7 +63,7 @@ const StreamingPage: NextPage = ({lang}: any) => {
                       </span>,type:'imageTop', image:'/images/streaming/history-channel-desafio-sobre-fuego.jpg', align:'center', textAlign:'center', justify:'start'}} image="/images/main-development.jpg" type="imageBackground"></CardProjects>
                   </div>
                   <div className={`col-span-12 md:col-span-6`}>
-                    <CardProjects config={{title:`Teatrix`,content:<span>Creación de contenido, creatividad e ideas para las redes sociales de TEATRIX. Producción de video y efectos visuales para esta plataforma de teatro OTT (Over The Top). También desarrollamos la primera versión de la plataforma TEATRIX en 2015
+                    <CardProjects config={{href: `/${params.lang}/projects/streaming/teatrix`,title:`Teatrix`,content:<span>Creamos contenido e ideas para las redes sociales de TEATRIX. Realizamos la producción de video y efectos visuales para la plataforma de teatro OTT (Over The Top) más importante de Lationamérica.
                       </span>,type:'imageTop', image:'/images/streaming/teatrix-teatro-online.jpg', align:'center', textAlign:'center', justify:'start'}} image="/images/main-development.jpg" type="imageBackground"></CardProjects>
                   </div>
                   <div className={`col-span-12 md:col-span-6`}>
@@ -93,7 +93,7 @@ const StreamingPage: NextPage = ({lang}: any) => {
             <div className={`flex basis-full md:basis-1/2 flex-col justify-center items-start px-4 md:px-8`}>
                 <h1 className={`text-3xl lg:text-4xl xl:text-6xl  uppercase font-bold md:leading-tight`}>También Somos</h1>
                 <h1 className={`text-3xl lg:text-4xl xl:text-6xl uppercase font-bold md:leading-tight`}>Tecnología<span className={`text-[#7ff]`}><br></br>_Desarrollo</span></h1>
-                <Link href={`/${lang}/development`} className={`w-full bg-black text-white text-center p-2 uppercase justify-self-end mt-16  `}>
+                <Link href={`/${params.lang}/development`} className={`w-full bg-black text-white text-center p-2 uppercase justify-self-end mt-16  `}>
                       Ver mas
                 </Link>
                 </div>

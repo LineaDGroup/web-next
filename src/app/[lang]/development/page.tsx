@@ -22,14 +22,14 @@ const DevelopmentPage = ({params}: any) => {
               <Section config={{maxWidth:'max-w-screen-lg', customClass:'py-48'}}>
                 <div className={`grid grid-cols-12 gap-4`}>
                   <div className={`col-span-12 md:col-span-6`}>
-                    <CardServices config={{title:`(Web, Mobile, Software)`,content:`Trabajamos con las tecnologías más modernas en desarrollo de software para productos digitales de la más alta calidad y performance. Desarrollamos productos como: E-commerce
+                    <CardServices config={{title:`Desarrollo Web, Mobile y Software`,content:`Trabajamos con las tecnologías más modernas en desarrollo de software para productos digitales de la más alta calidad y performance. Desarrollamos productos de E-commerce
                          - Apps
                          - Web
                          - Software
                       `,border: true, color: '#77ffff',type:'imageBackground', image:'/images/bg-dev.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
                   </div>
                   <div className={`col-span-12 md:col-span-6`}>
-                    <CardServices config={{title:`(Web y Mobile)`,content:`Diseño de interfáz y experiencia de usuario adaptable a todas las pantallas.
+                    <CardServices config={{title:`Diseño UI/UX`,content:`Diseño de interfaz y experiencia de usuario adaptable a todas las pantallas.
 Diseñamos productos basados en la premisa “Mobile First” para lograr un diseño atractivo y moderno con una experiencia de usuario óptima en cualquier dispositivo.
                       `,border: true, color: '#77ffff',type:'imageBackground', image:'/images/bg-dev-2.jpg', align:'left', textAlign:'left', justify:'end'}}></CardServices>
                   </div>

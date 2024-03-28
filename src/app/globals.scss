@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .title {
+    &.primary {
+      @apply text-6xl font-bold;
+    }
+    &.tertiary {
+      @apply text-2xl font-bold;
+    }
+  }
+}
